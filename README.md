@@ -23,7 +23,34 @@ else:
 
 Machine Guesser()
 ```
-
+keepGoing = true
+while keepGoing
+  Ask the player if they have a number ready
+  if not:
+    "Well why not?"
+  else:
+    int guessCount = 1
+    int computerGuess = 50
+    string stateResponse = "null"
+    keepGuessing = true
+    while keepGuessing
+      print "[guesscount]) I guess [computerGuess]"
+      print "Is the guess higher, lower, or correct?"
+      User input: stateResponse
+      if "lower"
+        computerGuess * 0.5
+        guessCount ++
+      elif "higher"
+        computerGuess * 1.5
+        guessCount ++
+      elif "correct"
+        print "Nice, I got it in [guessCount] guesses!"
+        keepGuessing = false
+        keepGoing = false
+      else:
+        print "Sorry, I don't understand that response. Please say if my guess was lower, higher, or correct"
+    
+  
 ```
 
 Human Guesser()
