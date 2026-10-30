@@ -19,8 +19,19 @@ public class GuessingGame {
   } // constructor
   public void MainMenu(){
     while(gameGoing){
-      System.out.print("This will be the main menu.\n");
+      Scanner choice = new Scanner(System.in);
+      //System.out.print("This will be the main menu.\n");
+      System.out.print("Please Select a Mode: \n");
+      System.out.print("0: Quit\n");
+      System.out.print("1: Computer Picks Number, Human Guesses\n");
+      System.out.print("2: Human Picks Number, Computer Guesses\n");
+      try{
+      int mode = Integer.parseInt(choice.nextLine());
+      //System.out.print(mode + "\n");// Test for Scanner input
       gameGoing = false;
+      }catch(NumberFormatException e){
+        System.out.print("Invalid input, please type '0', '1', or '2'.\n\n");
+      }//end try catch
     }//end while
   }//end MainMenu
   public int MachineGuesser(){
