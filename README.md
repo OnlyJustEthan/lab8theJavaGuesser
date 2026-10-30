@@ -56,9 +56,6 @@ while keepGoing
 
 Human Guesser()
 ```
-Create var for name
-Store result of "Hello, what is your name?"
-"Nice to meet you name, let's play a game."
 Generate and store random number.
 Create int for player guess.
 Set turn counter to 0.
