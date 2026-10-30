@@ -11,13 +11,14 @@ Java Utils
 Main Menu()
 
 ```
-Print option 0: Exit
-Print option 1: Human is Guessing
-Print option 2: Computer is Guessing
-if/elif valid option:
-  Start that function/exit
-else:
-  "Invalid option, please try again"
+gameGoing = true
+  Print option 0: Exit
+  Print option 1: Human is Guessing
+  Print option 2: Computer is Guessing
+  if/elif valid option:
+    Start that function/exit
+  else:
+    "Invalid option, please try again"
 ```
 
 
